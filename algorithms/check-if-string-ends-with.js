@@ -6,7 +6,7 @@
 function confirmEnding(str, target) {
     return str.slice(str.length - target.length) === target;
 }
-confirmEnding("foo bar", "bar");
+console.log(confirmEnding("foo bar", "bar"));
 
 
 // =======
@@ -25,4 +25,4 @@ console.log(confirmEnding("foo bar", "bar"));
 function confirmEnding(str, target) {
     return str.slice(-target.length) === target;
 }
-confirmEnding("foo bar", "bar");
+console.log(confirmEnding("foo bar", "bar"));
