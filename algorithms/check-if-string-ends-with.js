@@ -25,4 +25,4 @@ console.log(confirmEnding("foo bar", "bar"));
 function confirmEnding(str, target) {
     return str.slice(-target.length) === target;
 }
-confirmEnding("Bastian", "n");
+confirmEnding("foo bar", "bar");
