@@ -1,3 +1,8 @@
+/*
+================
+== Solution 1 ==
+================
+*/
 function findLongestWordLength(str) {
     let length = 0;
     let longestStr;
@@ -14,8 +19,11 @@ function findLongestWordLength(str) {
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog this-is-the-longest-word");
 
-// ==================================================
-
+/*
+================
+== Solution 2 ==
+================
+*/
 function findLongestWordLength(str) {
     let words = str.split(' ');
     let maxLength = 0;
@@ -27,8 +35,11 @@ function findLongestWordLength(str) {
     return maxLength;
 }
 
-// ==================================================
-
+/*
+================
+== Solution 2 ==
+================
+*/
 function findLongestWordLength(s) {
     return s.split(' ')
         .reduce(function (longest, word) {
