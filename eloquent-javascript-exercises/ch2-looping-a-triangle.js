@@ -9,6 +9,7 @@ Write a loop that makes seven calls to console.log to output the following trian
 #######
 */
 
+
 /*
 ================
 == Solution 1 ==
@@ -21,10 +22,12 @@ function drawTriangle(lines) {
 }
 drawTriangle(7);
 
+
 /*
 ================
 == Solution 2 ==
 ================
 */
-for (let line = '#'; line.length < 8; line += '#')
+for (let line = '#'; line.length < 8; line += '#') {
     console.log(line);
+}
