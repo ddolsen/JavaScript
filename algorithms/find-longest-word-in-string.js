@@ -37,7 +37,7 @@ function findLongestWordLength(str) {
 
 /*
 ================
-== Solution 2 ==
+== Solution 3 ==
 ================
 */
 function findLongestWordLength(s) {
