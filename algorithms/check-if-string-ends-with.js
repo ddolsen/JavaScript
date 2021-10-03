@@ -1,5 +1,6 @@
 // Check if a string (first argument, str) ends with the given target string (second argument, target)
 
+
 /*
 ================
 == Solution 1 ==
@@ -9,6 +10,7 @@ function confirmEnding(str, target) {
     return str.slice(str.length - target.length) === target;
 }
 console.log(confirmEnding("foo bar", "bar"));
+
 
 /*
 ================
@@ -20,6 +22,7 @@ function confirmEnding(str, target) {
     return re.test(str);
 }
 console.log(confirmEnding("foo bar", "bar"));
+
 
 /*
 ================

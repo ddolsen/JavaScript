@@ -14,6 +14,7 @@ function factorialize(num) {
 }
 console.log(factorialize(5));
 
+
 /*
 ================
 == Solution 2 ==
@@ -29,6 +30,7 @@ function factorialize(num) {
     return num * factorialize(num - 1);
 }
 console.log(factorialize(5));
+
 
 /*
 ================
@@ -48,11 +50,11 @@ function factorialize(num, factorial = 1) {
 }
 console.log(factorialize(5));
 
+
 /*
 ================
 == Solution 4 ==
 ================
-
 - The “reduce” function is used to find the factorial value of the number
 - An array is created which has length num, and all elements of the array are filled as undefined (because empty arrays are not reducible. The array can be filled any number of different ways.
 - The reduce function’s accumulator is calling product, which is also the final value. The index value is multiplied by/with the product to find the factorial value.
