@@ -1,30 +1,18 @@
-/*
-================
-== Solution 1 ==
-================
-*/
 function findLongestWordLength(str) {
-    let length = 0;
-    let longestStr;
+    let maxLength = 0;
     (str.split(' ')).forEach(element => {
         if (element.length > length) {
-            length = element.length;
-            longestStr = element;
+            maxLength = element.length;
         }
     });
-    // return length, longestStr;
-    console.log(`Length = ${length}`);
-    console.log(`Longest string = ${longestStr}`);
+    return maxLength;
 }
+console.log(findLongestWordLength('The quick brown fox jumped over the lazy dog'));
 
-findLongestWordLength("The quick brown fox jumped over the lazy dog this-is-the-longest-word");
+
+// =====================================================================
 
 
-/*
-================
-== Solution 2 ==
-================
-*/
 function findLongestWordLength(str) {
     let words = str.split(' ');
     let maxLength = 0;
@@ -35,16 +23,16 @@ function findLongestWordLength(str) {
     }
     return maxLength;
 }
+console.log(findLongestWordLength('The quick brown fox jumped over the lazy dog'));
 
 
-/*
-================
-== Solution 3 ==
-================
-*/
+// =====================================================================
+
+
 function findLongestWordLength(s) {
     return s.split(' ')
         .reduce(function (longest, word) {
             return Math.max(longest, word.length)
         }, 0);
 }
+console.log(findLongestWordLength('The quick brown fox jumped over the lazy dog'));
